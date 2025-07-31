@@ -6,7 +6,7 @@ import path from 'path';
 
 
     export default {
-      entry: './src/index.js',
+      entry: './client/index.js',
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
@@ -14,4 +14,3 @@ import path from 'path';
         mode: 'development',
     };
 
-    

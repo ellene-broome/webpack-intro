@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/greetings.js":
-/*!**************************!*\
-  !*** ./src/greetings.js ***!
-  \**************************/
+/***/ "./client/greetings.js":
+/*!*****************************!*\
+  !*** ./client/greetings.js ***!
+  \*****************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   sayGoodbye: () => (/* binding */ sayGoodbye),\n/* harmony export */   sayHello: () => (/* binding */ sayHello)\n/* harmony export */ });\nconsole.log(\"Hello, from greetings.js!\");\r\n\r\nfunction sayHello(name) {\r\n  return `Hello, ${name}!`;\r\n}\r\n\r\nfunction sayGoodbye(name) {\r\n  return `Goodbye, ${name}!`;\r\n}\r\n\n\n//# sourceURL=webpack://webpack-intro/./src/greetings.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   sayGoodbye: () => (/* binding */ sayGoodbye),\n/* harmony export */   sayHello: () => (/* binding */ sayHello)\n/* harmony export */ });\nconsole.log(\"Hello, from greetings.js!\");\r\n\r\nfunction sayHello(name) {\r\n  return `Hello, ${name}!`;\r\n}\r\n\r\nfunction sayGoodbye(name) {\r\n  return `Goodbye, ${name}!`;\r\n}\r\n\n\n//# sourceURL=webpack://webpack-intro/./client/greetings.js?\n}");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./client/index.js":
+/*!*************************!*\
+  !*** ./client/index.js ***!
+  \*************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _greetings_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./greetings.js */ \"./src/greetings.js\");\nconsole.log(\"Hello, from index.js!\");\r\n\r\n\r\nconsole.log((0,_greetings_js__WEBPACK_IMPORTED_MODULE_0__.sayHello)(\"Webpack\"));\r\nconsole.log((0,_greetings_js__WEBPACK_IMPORTED_MODULE_0__.sayGoodbye)(\"Webpack\"));\n\n//# sourceURL=webpack://webpack-intro/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _greetings_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./greetings.js */ \"./client/greetings.js\");\nconsole.log(\"Hello, from index.js!\");\r\n\r\n\r\nconsole.log((0,_greetings_js__WEBPACK_IMPORTED_MODULE_0__.sayHello)(\"Webpack\"));\r\nconsole.log((0,_greetings_js__WEBPACK_IMPORTED_MODULE_0__.sayGoodbye)(\"Webpack\"));\n\n//# sourceURL=webpack://webpack-intro/./client/index.js?\n}");
 
 /***/ })
 
@@ -90,7 +90,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./client/index.js");
 /******/ 	
 /******/ })()
 ;
