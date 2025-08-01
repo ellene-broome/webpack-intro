@@ -2,17 +2,18 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production', // Set mode to production for tree-shaking
-  entry: './src/index.js', // Entry point for the application
+  mode: 'production', // Enable tree-shaking
+  entry: './src/index.js', // Your main JavaScript file
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'), // Output directory for the bundled file /dis folder
+    path: path.resolve(__dirname, 'dist'), // Output folder (dist/)
+    clean: true, // Optional: clears dist/ before build
   },
   module: {
     rules: [
       {
-        test: /\..css$/i, // Regex to match CSS files
-        use: ['style-loader', 'css-loader'], // Loaders to handle CSS files
+        test: /\.css$/i, // FIXED: match .css files (you had an extra dot: \..css)
+        use: ['style-loader', 'css-loader'], // Injects CSS into the DOM
       },
     ],
   },
