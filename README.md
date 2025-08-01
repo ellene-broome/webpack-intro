@@ -47,3 +47,10 @@ This project is a basic example of using Webpack to bundle JavaScript modules.
 - **Default Output:** `./dist/main.js`
 - **Folder Structure:** If files are moved, the config must be updated.
 - **Custom Config:** Can be used with `--config <filename>` when running Webpack.
+
+/webpack-intro
+├── client/
+│   ├── index.js
+│   └── greetings.js
+├── webpack.custom.js
+├── package.json

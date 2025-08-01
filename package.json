@@ -2,11 +2,10 @@
   "name": "webpack-intro",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  
   "scripts": {
-  "build": "webpack"
-},
-
+    "build": "webpack --config webpack.custom.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ellene-broome/webpack-intro.git"

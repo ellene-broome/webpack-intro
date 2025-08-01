@@ -1,16 +1,13 @@
-import path from 'path';
-    import { fileURLToPath } from 'url';
+const path = require('path');
 
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = path.dirname(__filename);
-
-
-    export default {
-      entry: './client/index.js',
-        output: {
-            path: path.resolve(__dirname, 'dist'),
-            filename: 'bundle.js',
-        },
-        mode: 'development',
-    };
-
+module.exports = {
+  mode: 'production',
+  entry: './client/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  optimization: {
+    usedExports: true,
+  },
+};
