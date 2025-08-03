@@ -52,5 +52,12 @@ This project is a basic example of using Webpack to bundle JavaScript modules.
 ├── client/
 │   ├── index.js
 │   └── greetings.js
+├── dist/
+|   ├── bundle.js
+├── node_modules/
+├── README.md
+├── index.html
 ├── webpack.custom.js
 ├── package.json
+├── package-lock.json
+
